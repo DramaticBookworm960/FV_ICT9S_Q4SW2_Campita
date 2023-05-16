@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SW 2</title>
+</head>
+<body style="background:#F2DFBF ;color: #917650;text-align: center;">
+
+<h1 style="color: #DDC59C">Seconds</h1>
+<hr size="10" color= #DDC59C>
+<h4> Second → Minutes </h4>
+ <input type="number" id="operandSM">
+<br>
+<button onclick="SM();">solve</button>
+<hr size="10" color= #DDC59C>
+<h4> Second → Hour </h4>
+ <input type="number" id="operandSH">
+<br>
+<button onclick="SH();">solve</button>
+<hr size="10" color= #DDC59C >
+<h4> Second → Day </h4>
+ <input type="number" id="operandSD">
+<br>
+<button onclick="SD();">solve</button>
+<hr size="10" color= #DDC59C >
+
+
+<h1 style="color: #CCB289">Minutes</h1>
+<hr size="10" color= #CCB289 >
+<h4> Minutes → Sec </h4>
+ <input type="number" id="operandMS">
+<br>
+<button onclick="MS();">solve</button>
+<hr size="10" color= #CCB289 >
+<h4> Minutes → Hour </h4>
+<input type="number" id="operandMH">
+<br>
+<button onclick="MH();">solve</button>
+<hr size="10" color= #CCB289 >
+<h4> Minutes → Day </h4>
+ <input type="number" id="operandMD">
+<br>
+<button onclick="MD();">solve</button>
+<hr size="10" color= #CCB289 >
+
+
+<h1 style="color: #B59A70">Hours</h1>
+<hr size="10" color= #B59A70>
+<h4> Hours → Seconds </h4>
+ <input type="number" id="operandHS">
+<br>
+<button onclick="HS();">solve</button>
+<hr size="10" color= #B59A70>
+<h4> Hours → Minutes </h4>
+ <input type="number" id="operandHM">
+<br>
+<button onclick="HM();">solve</button>
+<hr size="10" color= #B59A70 >
+<h4> Hours → Days </h4>
+ <input type="number" id="operandHD">
+<br>
+<button onclick="HD();">solve</button>
+<hr size="10" color= #B59A70 >
+
+
+
+<h1 style="color: #AC9166">Days</h1>
+<hr size="10" color= #AC9166>
+<h4> Days → Seconds </h4>
+ <input type="number" id="operandDS">
+<br>
+<button onclick="DS();">solve</button>
+<hr size="10" color= #AC9166>
+<h4> Days → Minutes </h4>
+ <input type="number" id="operandDM">
+<br>
+<button onclick="DM();">solve</button>
+<hr size="10" color= #AC9166 >
+<h4> Days → Hours </h4>
+ <input type="number" id="operandDH">
+<br>
+<button onclick="DH();">solve</button>
+<hr size="10" color= #AC9166 >
+
+<script type="text/javascript">
+let x = 60;
+let y = 1440;
+let z = 3600;
+let w = 86400;
+let v = 24;
+let u =  86400;
+
+function MS (){
+	let a = parseInt (document.getElementById("operandMS").value);
+	
+	alert(a * x)
+}
+function MH (){
+	let a = parseInt (document.getElementById("operandMH").value);
+	
+	alert(a / x)
+}
+function MD (){
+	let b = parseInt (document.getElementById("operandMD").value);
+	
+	alert(b / y)
+}
+function SM (){
+	let b = parseInt (document.getElementById("operandSM").value);
+	
+	alert(b / x)
+}
+
+function SH (){
+	let b = parseInt (document.getElementById("operandSH").value);
+	
+	alert(b / z)
+}
+function SD (){
+	let b = parseInt (document.getElementById("operandSD").value);
+	
+	alert(b / w)
+}
+
+function SD (){
+	let b = parseInt (document.getElementById("operandSD").value);
+	
+	alert(b / w)
+}
+
+function HS (){
+	let b = parseInt (document.getElementById("operandHS").value);
+	
+	alert(b * z)
+}
+function HM (){
+	let b = parseInt (document.getElementById("operandHM").value);
+	
+	alert(b * x)
+}
+function HD (){
+	let b = parseInt (document.getElementById("operandHD").value);
+	
+	alert(b / v)
+}
+function DS (){
+	let b = parseInt (document.getElementById("operandDS").value);
+	
+	alert(b * u)
+}
+function DM (){
+	let b = parseInt (document.getElementById("operandDM").value);
+	
+	alert(b * y)
+}
+function DH (){
+	let b = parseInt (document.getElementById("operandDH").value);
+	
+	alert(b * v)
+}
+	
+	</script>
+</body>
+</html>
